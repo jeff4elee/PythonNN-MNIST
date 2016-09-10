@@ -1,0 +1,12 @@
+<nav class="navbar">
+
+<link rel="stylesheet" type="text/css" href="static/navstyle.css">
+
+<ul>
+  <li><a href="/" {% if request.path == '/' %}class="active"{% endif %}>Home</a></li>
+  <li><a href="/upload" {% if request.path == '/upload' %}class="active"{% endif %}>Upload</a></li>
+  <li><a href="/database" {% if request.path == '/database' %}class="active"{% endif %}>Database</a></li>
+</ul>
+
+</nav>
+

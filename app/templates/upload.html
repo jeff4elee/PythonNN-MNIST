@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<form action="{{ url_for('upload') }}" method="post" class="formformat" enctype="multipart/form-data">
+		<p>
+			Enter Nickname:
+			<input type="text" name="nickname"> <br>
+			<span style="color:red;font-size:0.5em;">{{ name_error }}</span>
+		</p>
+		<p>
+			<span style="color:red;font-size:1em;">Select an image of a number</span><br>
+			<input type="file" accept="image/" name="file"><br><br>
+			Enter the number's value <input type="text" name="true_val"> <br>
+			<span style="color:red;font-size:0.5em;">{{ num_error }}</span>
+		</p>
+		
+		<input type="submit" value="Upload">	
+	</form>
+{% endblock %}

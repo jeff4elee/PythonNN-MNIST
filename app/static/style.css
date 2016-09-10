@@ -1,0 +1,44 @@
+body{
+	background-color: #eef;
+	color: black;
+	padding: 0;
+	margin: 0;
+}
+
+div .centered{
+	text-align: center;
+}
+
+table{
+	font-size: 2em;
+	border-spacing: 2em 0.1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul{
+	list-style-type:none;
+}
+
+form{
+	width: max;
+	text-align: center;
+	font-size: 3em;
+	font-family: Arial;
+}
+
+input[type="text"]{
+	width: 12em;
+	font-size: 0.8em;
+}
+
+input[type="file"]{
+	width: 12.5em;
+	font-size: 0.8em;
+}
+
+input[type="submit"]{
+	width: 4em;
+	height: 1.5em;
+	font-size: 0.8em;
+}

@@ -1,0 +1,12 @@
+ {%  extends "layout.html" %}
+
+ {%  block title %}Database{%  endblock %}
+
+ {%  block content %}
+ 	<form action="{{ url_for('result') }}" method="post" class="formformat" enctype="multipart/form-data">
+	<br><br>
+	<span style="font-size:6em">{{ prediction }}</span><br>
+	Enter the number's value to help train our network <br>
+	<input type="text" name="true_val"> <br>
+	</form>
+ {%  endblock %}
